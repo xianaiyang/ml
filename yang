@@ -11,4 +11,7 @@ def depfirstsearch(problem):
           for i in range(0, len(successor))
               if successor[i][0] not in stateExploited:
                   if successor[i][0] not in stateInStack:
-                      
+                      StateToExpoit.push(successor[i][0])
+                      path.append(successor[i][1])
+                      actions.push(path[:])
+                
