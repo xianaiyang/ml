@@ -1,1 +1,14 @@
-i love zhouyang.
+def depfirstsearch(problem):
+      path = []
+      currentState = problem.getStartState()
+      stateInStack = []
+      stateExploited = []
+      StateToexploit = util.Stack()
+      actions = util.Stack()
+      while(problem.isGoal() == Failse):
+          stateExploited.append(currentState)
+          successor = problem.getSuccessor(currentState)
+          for i in range(0, len(successor))
+              if successor[i][0] not in stateExploited:
+                  if successor[i][0] not in stateInStack:
+                      
